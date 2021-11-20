@@ -1,0 +1,46 @@
+#progress-bar {
+  box-sizing: border-box;
+}
+#progress-bar *,
+#progress-bar *:before,
+#progress-bar *:after {
+  box-sizing: inherit;
+}
+
+#progress-bar {
+  width: 100%;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+#slider-background {
+  background-color: #000;
+  border-radius: 15px;
+}
+
+#slider {
+  padding-top: 5%;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;
+}
+#progress-bar-text {
+  width: 100%;
+  text-align: center;
+}
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+} ;

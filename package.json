@@ -1,0 +1,41 @@
+{
+  "name": "loading-animations-react",
+  "version": "1.2.0",
+  "description": "React component to display a loading animation",
+  "author": "Michael Joseph Miller <michael.joseph.miller@gmail.com> (https://michael-joseph-miller.github.io/MichaelJosephMiller.github.io/)",
+  "private": false,
+  "license": "MIT",
+  "files": [],
+  "keywords": [
+    "react",
+    "loading animation",
+    "component"
+  ],
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "demo": "parcel demo/index.html --open",
+    "watch": "parcel watch",
+    "build": "rm -rf dist && parcel build ./"
+  },
+  "homepage": "https://github.com/michael-joseph-miller/loading-animations-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-joseph-miller/loading-animations-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michael-joseph-miller/loading-animations-react/issues"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.1",
+    "@parcel/transformer-react-refresh-wrap": "^2.0.1",
+    "@parcel/transformer-webmanifest": "^2.0.1",
+    "parcel": "^2.0.1",
+    "sharp": "^0.29.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
