@@ -13,7 +13,7 @@
     "component"
   ],
   "scripts": {
-    "install": "cd lib && npm i lib/ && cd ../demo/ && npm i demo/ && cd../",
+    "install": "cd lib/ && npm i && cd ../demo/ && npm i && cd../",
     "postinstall": "npm run build:lib && npm run link",
     "start": "parcel demo/ lib/  --open",
     "build": "npm run build:lib && npm run build:demo",
