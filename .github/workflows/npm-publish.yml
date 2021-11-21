@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        uses: actions/setup-node@v2
 
       - name: Install and Build
         run: |
@@ -22,7 +23,6 @@ jobs:
       - name: Publish lib to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        uses: actions/setup-node@v2
         with:
           registry-url: 'https://registry.npmjs.org'
         run: npm publish lib/ --access public
