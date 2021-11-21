@@ -5,19 +5,26 @@
   "author": "Michael Joseph Miller <michael.joseph.miller@gmail.com> (https://michael-joseph-miller.github.io/MichaelJosephMiller.github.io/)",
   "private": false,
   "license": "MIT",
-  "files": [],
   "keywords": [
     "react",
     "loading animation",
+    "loading",
+    "animation",
     "component"
   ],
-  "source": "src/index.js",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
   "scripts": {
-    "demo": "parcel demo/index.html --open",
-    "watch": "parcel watch",
-    "build": "rm -rf dist && parcel build ./"
+    "install": "npm i lib/ && npm i demo/",
+    "postinstall": "npm run build:lib && npm run link",
+    "start": "parcel demo/ lib/  --open",
+    "build": "npm run build:lib && npm run build:demo",
+    "link": "cd demo/ && npm link ../lib && cd ../",
+    "reset": "npm run reset:demo && npm run reset:lib",
+    "install:lib": "cd lib/ && npm i && cd ../",
+    "install:demo": "cd demo/ && npm i && cd ../",
+    "build:lib": "cd lib/ && npm run build && cd ../",
+    "build:demo": "cd demo/ && npm run build && cd ../",
+    "reset:lib": "cd lib/ rm -rf node_modules/ dist/ .parcel-cache/ && cd ../",
+    "reset:demo": "cd demo/ rm -rf node_modules/ dist/ .parcel-cache/ && cd ../"
   },
   "homepage": "https://github.com/michael-joseph-miller/loading-animations-react#readme",
   "repository": {
@@ -29,13 +36,13 @@
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.0.1",
-    "@parcel/transformer-react-refresh-wrap": "^2.0.1",
     "@parcel/transformer-webmanifest": "^2.0.1",
     "parcel": "^2.0.1",
-    "sharp": "^0.29.3"
-  },
-  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "loading-animations-demo": "file:demo",
+    "loading-animations-react": "file:lib"
   }
 }

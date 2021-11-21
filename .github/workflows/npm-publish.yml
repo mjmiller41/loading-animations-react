@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Loading Animations for React
 on:
   workflow_dispatch:
   push:
@@ -11,21 +11,40 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm install
-      - run: npm run build
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        continue-on-error: true
-      - uses: actions/setup-node@v2
-        with:
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install and Build  
+        run: |
+          npm install
+          npm run build
+
+      - name : Publish lib/ to NPM 
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      uses: actions/setup-node@v2
+      with:
+        registry-url: 'https://registry.npmjs.org'
+      run: npm publish lib/ --access public
+    
+    - name: Deploy demo 🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.6
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: demo/dist/ # The folder the action should deploy.
+
+
+
+
+
+
+
+
+        # continue-on-error: true
+      # - uses: actions/setup-node@v2
+      #   with:
+      #     registry-url: 'https://npm.pkg.github.com'
+      # - run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   continue-on-error: true
