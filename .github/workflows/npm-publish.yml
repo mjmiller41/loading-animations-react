@@ -19,7 +19,7 @@ jobs:
           npm install
           npm run build
 
-      - name : Publish lib/ to NPM 
+      - name: Publish lib/ to NPM 
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       uses: actions/setup-node@v2
