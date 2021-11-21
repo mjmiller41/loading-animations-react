@@ -1,0 +1,35 @@
+{
+  "name": "loading-animations-demo",
+  "author": "Michael Joseph Miller",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "prebuild": "rm -rf dist/**",
+    "build": "parcel build index.html --public-url ./",
+    "postbuild": "cp robots.txt dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-joseph-miller/loading-animations-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michael-joseph-miller/loading-animations-demo/issues"
+  },
+  "homepage": "https://github.com/michael-joseph-miller/loading-animations-demo#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.1",
+    "@parcel/transformer-webmanifest": "^2.0.1",
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.3.11",
+    "sharp": "^0.29.3"
+  },
+  "browserslist": "defaults"
+}
