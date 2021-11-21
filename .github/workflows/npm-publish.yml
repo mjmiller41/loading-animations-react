@@ -20,12 +20,12 @@ jobs:
           npm run build
 
       - name: Publish lib to NPM 
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      uses: actions/setup-node@v2
-      with:
-        registry-url: 'https://registry.npmjs.org'
-      run: npm publish lib/ --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        uses: actions/setup-node@v2
+        with:
+          registry-url: 'https://registry.npmjs.org'
+        run: npm publish lib/ --access public
     
     - name: Deploy demo 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.6
