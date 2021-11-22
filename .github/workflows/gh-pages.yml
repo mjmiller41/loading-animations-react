@@ -1,4 +1,4 @@
-name: Loading Animations for React
+name: Gh-Pages Push
 on:
   workflow_dispatch:
   push:
@@ -19,13 +19,9 @@ jobs:
           npm install
           npm run build
 
-      - name: setup-node@v2
-        uses: actions/setup-node@v2
+      - name: Deploy demo 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.6
         with:
-          registry-url: 'https://registry.npmjs.org'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Publish lib to NPM
-        run: npm publish lib/ --access public
-        continue-on-error: true
+          branch: gh-pages # The branch the action should deploy to.
+          folder: demo/dist/ # The folder the action should deploy.
+          continue-on-error: true
