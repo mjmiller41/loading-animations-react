@@ -1,6 +1,5 @@
 name: NPM Publish
-on:
-  workflow_dispatch:
+on: workflow_dispatch::lib
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,8 +12,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install
-          npm run build
+          npm install:lib
+          npm run build:lib
 
       - name: setup-node@v2
         uses: actions/setup-node@v2
