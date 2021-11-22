@@ -13,7 +13,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install:demo
+          npm run install:demo
           npm run build:demo
 
       - name: Deploy demo 🚀

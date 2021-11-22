@@ -12,7 +12,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install:lib
+          npm run install:lib
           npm run build:lib
 
       - name: setup-node@v2
