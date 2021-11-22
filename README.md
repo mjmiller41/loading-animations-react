@@ -3,7 +3,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <h1 align="center">loading-animations-react</h1>
 <h2 align='center'>A collection of animated loading elements for use with <a href="https://reactjs.org">React</a><h2>
@@ -15,10 +14,13 @@
     <a href="https://github.com/michael-joseph-miller/loading-animations-react/issues">Request Feature</a>
 </p>
 
-## Table of Contents
+## Table of Contents<!-- omit in toc -->
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Attributes](#attributes)
+  - [Global attributes (used by all)](#global-attributes-used-by-all)
+  - [Components specific attributes](#components-specific-attributes)
 - [License](#license)
 - [Contact](#contact)
 
