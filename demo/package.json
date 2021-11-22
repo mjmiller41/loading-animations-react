@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/michael-joseph-miller/loading-animations-demo#readme",
   "dependencies": {
+    "loading-animations-react": "^1.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
