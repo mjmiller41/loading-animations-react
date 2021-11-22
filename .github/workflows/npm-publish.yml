@@ -1,5 +1,6 @@
 name: NPM Publish
-on: workflow_dispatch::lib
+on:
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
