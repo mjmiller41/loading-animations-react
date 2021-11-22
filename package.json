@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "install": "cd lib/ && npm i && cd ../demo/ && npm i && cd ../",
-    "start": "parcel demo/ lib/  --open",
+    "start": "npm run build:lib && cd demo/ && npm start && cd ../",
     "build": "npm run build:lib && npm run build:demo",
     "link": "cd demo/ && npm link ../lib && cd ../",
     "reset:all": "npm run reset:demo && npm run reset:lib && npm run reset",
@@ -33,16 +33,5 @@
   },
   "bugs": {
     "url": "https://github.com/michael-joseph-miller/loading-animations-react/issues"
-  },
-  "devDependencies": {
-    "@parcel/packager-raw-url": "^2.0.1",
-    "@parcel/transformer-webmanifest": "^2.0.1",
-    "parcel": "^2.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "dependencies": {
-    "loading-animations-demo": "file:demo",
-    "loading-animations-react": "file:lib"
   }
 }
