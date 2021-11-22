@@ -14,17 +14,17 @@
   ],
   "scripts": {
     "install": "cd lib/ && npm i && cd ../demo/ && npm i && cd ../",
-    "postinstall": "npm run build:lib && npm run link",
     "start": "parcel demo/ lib/  --open",
     "build": "npm run build:lib && npm run build:demo",
     "link": "cd demo/ && npm link ../lib && cd ../",
-    "reset": "npm run reset:demo && npm run reset:lib",
+    "reset:all": "npm run reset:demo && npm run reset:lib && npm run reset",
     "install:lib": "cd lib/ && npm i && cd ../",
     "install:demo": "cd demo/ && npm i && cd ../",
     "build:lib": "cd lib/ && npm run build && cd ../",
     "build:demo": "cd demo/ && npm run build && cd ../",
-    "reset:lib": "cd lib/ rm -rf node_modules/ dist/ .parcel-cache/ && cd ../",
-    "reset:demo": "cd demo/ rm -rf node_modules/ dist/ .parcel-cache/ && cd ../"
+    "reset": "rm -rf node_modules/ dist/ .parcel-cache/ package-lock.json",
+    "reset:lib": "cd lib/ && rm -rf node_modules/ dist/ .parcel-cache/ package-lock.json && cd ../",
+    "reset:demo": "cd demo/ && rm -rf node_modules/ dist/ .parcel-cache/ package-lock.json && cd ../"
   },
   "homepage": "https://github.com/michael-joseph-miller/loading-animations-react#readme",
   "repository": {
