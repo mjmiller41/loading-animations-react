@@ -31,9 +31,8 @@ jobs:
         continue-on-error: true
 
       - name: Deploy demo 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.6
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages # The branch the action should deploy to.
-          folder: demo/dist/ # The folder the action should deploy.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./demo/
           continue-on-error: true
