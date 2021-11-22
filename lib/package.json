@@ -40,8 +40,5 @@
   },
   "browserslist": [
     "defaults"
-  ],
-  "dependencies": {
-    "loading-animations-demo": "file:../demo"
-  }
+  ]
 }
