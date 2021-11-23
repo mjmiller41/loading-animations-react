@@ -71,8 +71,8 @@ Each tag has attributes that can be used to customize the component. All attribu
     - Up to six strings defining colors. Standard css color definitions are used.
     - Although their are six dots, you can define from 1 to 6 colors. If less than six are given, the component will choose more starting from the beginning of the list supplied.
     ```html
-    <Dots dotColors=[ 'red', 'white', 'blue', '#123abc', 'rgb(50,50,50)',
-    'hsla(235, 100%, 50%, .5)' ] />
+    <Dots dotColors={[ 'red', 'white', 'blue', '#123abc', 'rgb(50,50,50)',
+    'hsla(235, 100%, 50%, .5)' ]} />
     ```
 
 - Progreas Bar
