@@ -4,15 +4,13 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<h1 align="center">loading-animations-react</h1>
-<h2 align='center'>A collection of animated loading elements for use with <a href="https://reactjs.org">React</a><h2>
-  <p align='center'>
-    <a href="https://michael-joseph-miller.github.io/loading-animations-react/">View Demo</a>
-    ·
-    <a href="https://github.com/michael-joseph-miller/loading-animations-react/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/michael-joseph-miller/loading-animations-react/issues">Request Feature</a>
-</p>
+# Loading Animations for React<!-- omit in toc -->
+
+A collection of animated loading elements for use with [React](https://reactjs.org)<!-- omit in toc -->
+
+[View Demo][demo] | [Report Bug][bug] | [Request Features][features]
+
+---
 
 ## Table of Contents<!-- omit in toc -->
 
@@ -141,18 +139,21 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/michael-joseph-miller/loading-animations-react](https://github.com/michael-joseph-miller/loading-animations-react)
+Project Link: <https://github.com/michael-joseph-miller/loading-animations-react>
 
 <!-- LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/michael-joseph-miller/loading-animations-react?color=blue
+[contributors-shield]: https://img.shields.io/github/contributors/michael-joseph-miller/loading-animations-react?color=green
 [contributors-url]: https://github.com/michael-joseph-miller/loading-animations-react/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/michael-joseph-miller/loading-animations-react
+[forks-shield]: https://img.shields.io/github/forks/michael-joseph-miller/loading-animations-react?color=green
 [forks-url]: https://github.com/michael-joseph-miller/loading-animations-react/network/members
-[stars-shield]: https://img.shields.io/github/stars/michael-joseph-miller/loading-animations-react
+[stars-shield]: https://img.shields.io/github/stars/michael-joseph-miller/loading-animations-react?color=green
 [stars-url]: https://github.com/michael-joseph-miller/loading-animations-react/stargazers
-[issues-shield]: https://img.shields.io/github/issues/michael-joseph-miller/loading-animations-react?color=blue
+[issues-shield]: https://img.shields.io/github/issues/michael-joseph-miller/loading-animations-react?color=green?color=green
 [issues-url]: https://github.com/michael-joseph-miller/loading-animations-react/issues
-[license-shield]: https://img.shields.io/github/license/michael-joseph-miller/loading-animations-react?color=blue
+[license-shield]: https://img.shields.io/github/license/michael-joseph-miller/loading-animations-react?color=blue?color=green
 [license-url]: https://github.com/michael-joseph-miller/loading-animations-react/blob/main/LICENSE
+[demo]: https://michael-joseph-miller.github.io/loading-animations-react/
+[bug]: https://github.com/michael-joseph-miller/loading-animations-react/issues
+[features]: https://github.com/michael-joseph-miller/loading-animations-react/issues
 [react]: https://reactjs.org

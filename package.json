@@ -1,6 +1,6 @@
 {
   "name": "loading-animations-react",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "description": "React component to display a loading animation",
   "author": "Michael Joseph Miller <michael.joseph.miller@gmail.com> (https://michael-joseph-miller.github.io/MichaelJosephMiller.github.io/)",
   "private": false,
@@ -16,6 +16,9 @@
     "install": "cd lib/ && npm i && cd ../demo/ && npm i && cd ../",
     "start": "npm run build:lib && cd demo/ && npm start && cd ../",
     "build": "npm run build:lib && npm run build:demo",
+    "version:major": "npm version major && cd demo/ && npm version major && cd ../lib/ && npm version major && cd ../",
+    "version:minor": "npm version minor && cd demo/ && npm version minor && cd ../lib/ && npm version minor && cd ../",
+    "version:patch": "npm version patch && cd demo/ && npm version patch && cd ../lib/ && npm version patch && cd ../",
     "link": "cd demo/ && npm link ../lib && cd ../",
     "reset:all": "npm run reset:demo && npm run reset:lib && npm run reset",
     "install:lib": "cd lib/ && npm i && cd ../",
