@@ -157,3 +157,4 @@ Project Link: <https://github.com/michael-joseph-miller/loading-animations-react
 [bug]: https://github.com/michael-joseph-miller/loading-animations-react/issues
 [features]: https://github.com/michael-joseph-miller/loading-animations-react/issues
 [react]: https://reactjs.org
+# lib-starter
